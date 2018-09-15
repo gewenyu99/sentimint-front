@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 import question from './question.png';
 import './App.css';
@@ -11,7 +10,8 @@ const customStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    width                 : '42%',
   }
 };
 
@@ -35,7 +35,7 @@ class InfoModal extends React.Component {
   }
 
   afterOpenModal() {
-    this.subtitle.style.color = '#3ee89a';
+    this.subtitle.style.color = '#A5DFCA';
   }
 
   closeModal() {
@@ -56,12 +56,13 @@ class InfoModal extends React.Component {
           contentLabel="Help"
         >
 
-          <h2 ref={subtitle => this.subtitle = subtitle}>What is Sentimint?</h2>
-          <div>Sentimint is here for you. You can jot down your thoughts, emotions, and 
-              experiences <br /> in the text field below and receive suggestions and what to do to feel better.<br /> 
+          <h2 className="Pier" ref={subtitle => this.subtitle = subtitle}>What is Sentimint?</h2>
+          <div className="ModalText">Sentimint is here for you. You can jot down your thoughts, emotions, and 
+              experiences in the text field below and receive suggestions and what to do to feel better. 
               Sentimint is completely secure, confidential, and free.</div>
-            <br />
+              <br />
           <button class="InfoModalCloseButton" onClick={this.closeModal}>Close</button>
+          <br />
         </Modal>
       </div>
     );
