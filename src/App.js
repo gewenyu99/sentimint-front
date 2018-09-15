@@ -5,6 +5,8 @@ import logo from './logo.png';
 import TextForm from './TextForm';
 import InfoModal from './InfoModal';
 import './App.css';
+import './TextForm.css';
+import question from './question.png';
 
 class App extends Component {
   render() {
