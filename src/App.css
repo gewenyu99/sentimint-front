@@ -20,14 +20,30 @@
 }
 
 .InfoModalCloseButton {
-  border: 1px solid #3ee89a;
+  border: 1px solid #A5DFCA;
   border-radius: 2px;
-  color: #3ee89a;
+  color: #A5DFCA;
   cursor:pointer;
+  font-size: 15px;
+  font-family: Pier Sans;
+}
+
+.ModalText {
+  color: gray;
+  font-family: Pier Sans;
+  font-weight: lighter;
+  padding-bottom: 2.5%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.Pier {
+  font-family: Pier Sans;
+  font-weight: lighter;
 }
 
 .floating-arrow {
-  height: 75px;
+  height: 65px;
   float: center;
 }
 
