@@ -4,7 +4,7 @@ class TextForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'Let your emotions do the talking...'
+      value: 'How do you feel...'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -16,7 +16,7 @@ class TextForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('An essay was submitted: ' + this.state.value);
+    alert('Your response has been saved: ' + this.state.value);
     event.preventDefault();
   }
 
