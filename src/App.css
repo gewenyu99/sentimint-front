@@ -9,14 +9,41 @@
 
 .Question-icon {
   height: 25px;
+}
+
+.InfoModalButton {
   float: right;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.InfoModalCloseButton {
+  border: 1px solid #3ee89a;
+  border-radius: 2px;
+  color: #3ee89a;
+  cursor:pointer;
+}
+
+.floating-arrow {
+  height: 75px;
+  float: center;
+}
+
+.floating {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  transition: 1s;
+  transform: translateY(50%);
 }
 
 .App-header {
   background-color: #ffffff;
   height: 150px;
   padding: 20px;
-  color: #222222;
 }
 
 .App-title {
