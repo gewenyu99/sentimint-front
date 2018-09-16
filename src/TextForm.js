@@ -43,14 +43,13 @@ class TextForm extends React.Component {
 
  render() {
    return (
-     <div>
+     <div id="input-area">
      <form onSubmit={this.handleSubmit}>
        <label>
-         <TextareaAutosize onChange={this.handleChange} value={this.state.value} placeholder = "Let your emotions do the talking..."/>
+         <TextareaAutosize id="text-box" onChange={this.handleChange} value={this.state.value} placeholder = "Let your emotions do the talking..."/>
        </label>
        <input type="submit" value="Enter Journal"/>
      </form>
-     <p id="sentiment_text" > </p>
      </div>
    );
  }

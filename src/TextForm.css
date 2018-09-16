@@ -33,11 +33,32 @@ textarea{
  50% { border-color: orange }
 }
 
+#buttonBox {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+#input-area {
+    height: 35vh;
+    display: block;
+}
+
+#text-box {
+    height: 50%;
+}
+
+#speech-text {
+    height: 10vh;
+}
+
 input[type=submit] {
    background-color: #a3e2cb;
    border: none;
    border-radius: 10px;
    color: white;
+   font-size: 20px;
+   font-family: Pier Sans;
    padding: 12px 18px;
    text-decoration: none;
    margin: 8px 2px;

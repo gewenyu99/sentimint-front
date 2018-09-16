@@ -12,11 +12,13 @@
 }
 
 .speechButton {
+  padding: 25px;
+  margin-right: 100px;
   border: 1px solid #A5DFCA;
   border-radius: 2px;
   color: #A5DFCA;
   cursor:pointer;
-  font-size: 15px;
+  font-size: 20px;
   font-family: Pier Sans;
 }
 
@@ -39,6 +41,7 @@
 
 .ModalText {
   color: gray;
+  padding-top: 20px;
   font-family: Pier Sans;
   font-weight: lighter;
   padding-bottom: 2.5%;
@@ -52,8 +55,9 @@
 }
 
 .floating-arrow {
+  align-content: center;
+  margin-top: 100px;
   height: 65px;
-  float: center;
 }
 
 .floating {
@@ -77,4 +81,104 @@
 
 .App-intro {
   font-size: large;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.textarea{
+    border: none;
+    width: 100%;
+    resize: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Resultsheader{
+  text-align: center;
+  color: red;
+  padding: 24px 16px;
+}
+.container .item {
+  display: grid;
+  margin: auto;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  color: white;
+  transition: .3s;
+  max-width: 20%;
+  height: 100vh;
+  min-width: 10%;
+  background-color: rgba(34, 34, 34, 0.4);
+}
+.container .item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center bottom;
+  background-size: cover;
+  z-index: -1;
+}
+.container .item:nth-of-type(odd):before {
+  background-image: url("https://images.unsplash.com/photo-1508945620753-e2344dfbda6b?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&s=29dab9e47bdca132bd5c31d5155a6bf5");
+}
+.container .item:nth-of-type(even):before {
+  background-image: url("https://images.unsplash.com/photo-1502090154121-caf9968dcd04?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ%3D%3D%0A&s=ccc1cfea72263260e0823c14680af8ae");
+}
+.container .item:hover {
+  transition: .5s;
+  max-width: 40% !important;
+  flex-grow: 2;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+.container .item:hover p {
+  -webkit-transform: none;
+          transform: none;
+  transition: .3s;
+}
+.container .content {
+  margin: auto;
+  font-size: 2em;
+}
+.container p {
+  -webkit-transform: translateY(120vh);
+          transform: translateY(120vh);
+}
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
 }
