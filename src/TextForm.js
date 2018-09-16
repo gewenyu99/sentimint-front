@@ -7,7 +7,8 @@ class TextForm extends React.Component {
    super(props);
 
    this.state = {
-     value: ''
+     value: '',
+     sentiment: ''
    };
    this.handleChange = this.handleChange.bind(this);
    this.handleSubmit = this.handleSubmit.bind(this);
@@ -21,6 +22,19 @@ class TextForm extends React.Component {
  handleSubmit(event) {
    alert('A journal was submitted: ' + this.state.value);
    event.preventDefault();
+   var xhttp = new XMLHttpRequest();
+   xhttp.open("POST", 'https://us-central1-sentimint-e1de7.cloudfunctions.net/helloWorld', true);
+   // xhttp.open("POST", 'http://localhost:5000/sentimint-e1de7/us-central1/helloWorld', true);
+   xhttp.send(this.state.value);
+   var that = this;
+   xhttp.onreadystatechange = function (e) {
+     console.log(xhttp.responseText);
+     e.preventDefault();
+     that.setState({
+       sentiment: xhttp.responseText
+     });
+     document.getElementById("sentiment_text").innerHTML = that.state.sentiment;
+   };
  }
 
  componentWillReceiveProps(nextProps) {
@@ -29,12 +43,15 @@ class TextForm extends React.Component {
 
  render() {
    return (
+     <div>
      <form onSubmit={this.handleSubmit}>
        <label>
          <TextareaAutosize onChange={this.handleChange} value={this.state.value} placeholder = "Let your emotions do the talking..."/>
        </label>
        <input type="submit" value="Enter Journal"/>
      </form>
+     <p id="sentiment_text" > </p>
+     </div>
    );
  }
 }
