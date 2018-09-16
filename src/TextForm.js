@@ -27,6 +27,7 @@ class TextForm extends React.Component {
    xhttp.send(this.state.value);
    var that = this;
    xhttp.onreadystatechange = function (e) {
+     window.scrollBy(0, 210);
      console.log(xhttp.responseText);
      e.preventDefault();
      that.setState({
