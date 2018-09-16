@@ -20,7 +20,6 @@ class TextForm extends React.Component {
 
  // SUBMIT BUTTON FUNCTION
  handleSubmit(event) {
-   alert('A journal was submitted: ' + this.state.value);
    event.preventDefault();
    var xhttp = new XMLHttpRequest();
    xhttp.open("POST", 'https://us-central1-sentimint-e1de7.cloudfunctions.net/helloWorld', true);
@@ -46,7 +45,7 @@ class TextForm extends React.Component {
      <div id="input-area">
      <form onSubmit={this.handleSubmit}>
        <label>
-         <TextareaAutosize id="text-box" onChange={this.handleChange} value={this.state.value} placeholder = "Let your emotions do the talking..."/>
+         <TextareaAutosize id="text-box" onChange={this.handleChange} value={this.state.value} placeholder = "Let your emotions do the talking..." autofocus/>
        </label>
        <input type="submit" value="Enter Journal"/>
      </form>

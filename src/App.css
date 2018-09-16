@@ -13,13 +13,13 @@
 
 .speechButton {
   padding: 25px;
-  margin-right: 100px;
   border: 1px solid #A5DFCA;
   border-radius: 2px;
   color: #A5DFCA;
   cursor:pointer;
   font-size: 20px;
   font-family: Pier Sans;
+  width: 20vw
 }
 
 .InfoModalButton {
@@ -103,9 +103,11 @@
 }
 
 .Resultsheader{
+  padding: 1vh;
   text-align: center;
-  color: red;
-  padding: 24px 16px;
+  color: #A5DFCA;
+  height: 30vh;
+  font-size: 8vh;  
 }
 .container .item {
   display: grid;
@@ -116,7 +118,7 @@
   color: white;
   transition: .3s;
   max-width: 20%;
-  height: 100vh;
+  height: 70vh;
   min-width: 10%;
   background-color: rgba(34, 34, 34, 0.4);
 }
@@ -181,4 +183,8 @@
 
 .button-secondary {
     background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.container {
+  margin-top: 50vh
 }

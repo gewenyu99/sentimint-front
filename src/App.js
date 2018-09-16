@@ -31,10 +31,8 @@ class App extends Component {
           <button className="speechButton" onClick={()=>{this.status()}}>{this.props.listening ? "Recording" : "Not   Recording"}</button>
           <button className="speechButton" onClick={this.props.resetTranscript}>Reset</button>
         </div>
-        <div class="Resultsheader">
-                <p id="sentiment_text" > </p>
-        </div>
         <div class="container">
+                
                 <div class="item">
                   <div class="content">
                     <h3>Title</h3>
@@ -65,7 +63,10 @@ class App extends Component {
                     <p>Lorem ipsum amet</p>
                   </div>
                 </div>
-        </div>
+          </div>
+          <div class="Resultsheader">
+            <p id="sentiment_text" > </p>
+          </div>
       </div>
     );
   }
