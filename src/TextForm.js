@@ -12,6 +12,7 @@ class TextForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+
     handleChange(event) {
         this.setState({value: event.target.value});
     }
@@ -44,6 +45,6 @@ class TextForm extends React.Component {
             </div>
         );
     }
-}
+
 
 export default TextForm;
