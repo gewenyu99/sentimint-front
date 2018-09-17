@@ -34,38 +34,40 @@ class App extends Component {
         <div class="container">
                 
                 <div class="item">
+                  <a href="https://www.facebook.com/events/669158016775456/">
                   <div class="content">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum amet</p>
+                    <h3>Wine and Sign - Christmas Signs!</h3>
+                    <p>Join Nailed It Nite and The Kitchener Market for another DIY Win and Sign night.</p>
+                  </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="content">
+                    <h3>Local Marathon</h3>
+                    <p>Join us for the local Terry Fox run at University of Western Ontario on September 18th.</p>
                   </div>
                 </div>
                 <div class="item">
                   <div class="content">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum amet</p>
+                    <h3>Coffee and Code</h3>
+                    <p>A social for coders, free coffee provided.</p>
                   </div>
                 </div>
                 <div class="item">
                   <div class="content">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum amet</p>
+                    <h3>Stargazing and Bonfires.</h3>
+                    <p>Join the Engineering society at the University of Waterloo for stargazing and bonfires. </p>
                   </div>
                 </div>
                 <div class="item">
                   <div class="content">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum amet</p>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="content">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum amet</p>
+                    <h3>Photography Classes</h3>
+                    <p>Capture the moments in life you never wish to forget.</p>
                   </div>
                 </div>
           </div>
           <div class="Resultsheader">
-            <p id="sentiment_text" > </p>
+            <p id="sentiment_text"></p>
           </div>
       </div>
     );

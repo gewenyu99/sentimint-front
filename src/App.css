@@ -122,6 +122,10 @@
   min-width: 10%;
   background-color: rgba(34, 34, 34, 0.4);
 }
+.container .item a {
+  color: white;
+  text-decoration: none;
+}
 .container .item:before {
   content: '';
   position: absolute;
