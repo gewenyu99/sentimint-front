@@ -10,6 +10,8 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import './TextForm.css';
+import question from './question.png';
 
 class App extends Component {
   status() {
